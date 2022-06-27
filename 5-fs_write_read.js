@@ -7,7 +7,7 @@ console.log(first, second);
 
 writeFileSync('./testFolder/third.txt', 'its new file');
 
-// second read write with callback
+// second read write with callback - Async
 const {readFile, writeFile} = require('fs');
 
 readFile('./testFolder/first.txt', 'utf8', (err, data) => {
